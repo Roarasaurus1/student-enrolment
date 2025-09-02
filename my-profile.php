@@ -119,8 +119,8 @@
                         <td><?=htmlspecialchars($date_of_birth, ENT_QUOTES)?></td>
                     </tr>
                     <tr>
-                                                <th scope="row">Gender:</th>
-                                                <td><?=htmlspecialchars($gender, ENT_QUOTES)?></td>
+                        <th scope="row">Gender:</th>
+                        <td><?=htmlspecialchars($gender, ENT_QUOTES)?></td>
                     </tr>
                     <tr>
                         <th scope="row">Class Group:</th>
@@ -138,21 +138,21 @@
                     </tr>
                 </thead>
                 <tbody>
-					<?php
-						$maxSubjects = max(count($subjects_1), count($subjects_2));
-						for ($i = 0; $i < $maxSubjects; $i++) {
-							echo '<tr><td>';
-							if (isset($subjects_1[$i])) {
-								echo htmlspecialchars($subjects_1[$i]);
-							}
-							echo '</td>';
-							echo '<td>';
-							if (isset($subjects_2[$i])) {
-								echo htmlspecialchars($subjects_2[$i]);
-							}
-							echo '</td></tr>';
-						}
-						?>
+                    <?php
+                        $maxSubjects = max(count($subjects_1), count($subjects_2));
+                        for ($i = 0; $i < $maxSubjects; $i++) {
+                            echo '<tr><td>';
+                            if (isset($subjects_1[$i])) {
+                                echo htmlspecialchars($subjects_1[$i]);
+                            }
+                            echo '</td>';
+                            echo '<td>';
+                            if (isset($subjects_2[$i])) {
+                                echo htmlspecialchars($subjects_2[$i]);
+                            }
+                            echo '</td></tr>';
+                        }
+                    ?>
                 </tbody>
             </table>
         </div>
