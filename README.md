@@ -2,6 +2,7 @@
 BSBCRT611, BSBTWK502, BSBXCS402 Assessment v1.0
 
 ## DB
+```
 CREATE TABLE staff (
     uuid UUID PRIMARY KEY DEFAULT UUID(),
     username VARCHAR(64) NOT NULL,
@@ -29,3 +30,4 @@ CREATE TABLE enrolments (
     FOREIGN KEY (class_uid) REFERENCES class (uuid) ON DELETE CASCADE,
     UNIQUE ('staff_uid', 'class_uid')
 );
+```
